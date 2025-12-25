@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetSurfer Bookmarks</title>
+  <!-- Tailwind CSS via CDN for rapid styling -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Site Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">NetSurfer Bookmarks</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#features" class="text-gray-600 hover:text-blue-600">Features</a></li>
+          <li><a href="#about" class="text-gray-600 hover:text-blue-600">About</a></li>
+          <li><a href="#open-source" class="text-gray-600 hover:text-blue-600">Open&nbsp;Source</a></li>
+          <li><a href="https://github.com/stargazerwna/netsurfer-bookmarks" class="text-gray-600 hover:text-blue-600">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20 px-4" id="home">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-extrabold mb-4 max-w-3xl">Modern open‑source bookmarking, built on proven foundations.</h2>
+      <p class="text-lg mb-6 max-w-2xl">
+        Save, organize, and explore your bookmarks with a clean, visual interface — inspired by <strong>SiteBar</strong>, redesigned for today.
+      </p>
+      <div class="flex space-x-4">
+        <a href="#get-started" class="bg-white text-blue-600 px-5 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Get&nbsp;Started</a>
+        <a href="https://github.com/stargazerwna/netsurfer-bookmarks" class="bg-transparent border border-white px-5 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">View&nbsp;on&nbsp;GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Beautiful Bookmarking</h4>
+          <p class="text-gray-700">Visual grid &amp; list views, website previews &amp; icons, dark &amp; light themes, fast search and filtering.</p>
+        </div>
+        <!-- Feature Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Organize Your Way</h4>
+          <p class="text-gray-700">Collections &amp; folders, tags &amp; smart filtering, favorites &amp; quick access.</p>
+        </div>
+        <!-- Feature Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Built on Open&nbsp;Source</h4>
+          <p class="text-gray-700">Based on GPL‑licensed SiteBar concepts, fully GPL‑compatible codebase, transparent development &amp; roadmap.</p>
+        </div>
+        <!-- Feature Card 4 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Self‑Hosted First</h4>
+          <p class="text-gray-700">Run it on your own server, no SaaS lock‑in, ideal for homelabs, teams, and communities.</p>
+        </div>
+        <!-- Feature Card 5 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">API‑Ready Architecture</h4>
+          <p class="text-gray-700">Clean REST API, automation &amp; integrations, designed for browser sync.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-center">Rooted in History, Built for the Future</h3>
+      <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto">
+        Before cloud services and closed platforms, <strong>SiteBar</strong> proved that bookmarks could live on your server — open, flexible, and community‑maintained.
+        NetSurfer Bookmarks continues that vision: respecting the GPL license, preserving the original philosophy, modernizing the architecture, UI, and performance.
+        This is a <em>continuation</em>, not a rewrite of history.
+      </p>
+    </div>
+  </section>
+
+  <!-- Open Source Section -->
+  <section id="open-source" class="py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-6">Open Source &amp; Licensing</h3>
+      <p class="text-gray-700 text-center mb-6 max-w-2xl mx-auto">
+        NetSurfer Bookmarks is fully open‑source under the <strong>GNU General Public License (GPL)</strong>, compatible with the original SiteBar license.
+        Contributions must remain open, ensuring long‑term freedom for users and contributors.
+      </p>
+      <div class="flex justify-center">
+        <a href="https://github.com/stargazerwna/netsurfer-bookmarks" class="bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold hover:bg-blue-500 transition">Fork on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 NetSurfer Bookmarks. All rights reserved.</p>
+      <nav class="mt-4 md:mt-0">
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-white">Home</a></li>
+          <li><a href="#features" class="hover:text-white">Features</a></li>
+          <li><a href="#about" class="hover:text-white">About</a></li>
+          <li><a href="https://github.com/stargazerwna/netsurfer-bookmarks" class="hover:text-white">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
