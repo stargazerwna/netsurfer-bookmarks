@@ -281,7 +281,7 @@ MIT License - see LICENSE file for details.
 
 For issues and questions:
 
-1. Check the [Issues](https://github.com/your-username/netsurfer-bookmarks-service/issues) page
+1. Check the [Issues](https://github.com/stargazerwna/netsurfer-bookmarks/issues) page
 2. Create a new issue with detailed information
 3. Include error logs and environment details
 
