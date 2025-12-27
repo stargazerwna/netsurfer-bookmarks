@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "NetSurfer Bookmarks on GitHub",
+    "url": "https://github.com/stargazerwna/netsurfer-bookmarks",
+    "description": "Repository for NetSurfer Bookmarks project",
+    "tags": ["project", "bookmark-manager"]
+  },
+  {
+    "id": 2,
+    "title": "Raindrop.io",
+    "url": "https://raindrop.io",
+    "description": "Modern bookmark manager for everyone",
+    "tags": ["inspiration", "design"]
+  }
+]

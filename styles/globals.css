@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #f9fafb;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+}
+
+::selection {
+  background-color: #111827;
+  color: white;
+}
+
+/* Custom global styles can be added here */
