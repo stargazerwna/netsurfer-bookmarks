@@ -1,6 +1,9 @@
-.next
+.next/
+.netlify/
 node_modules
 .env
 .env.*
 prisma/dev.db
 prisma/dev.db-journal
+.README.md
+README.md
