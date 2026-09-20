@@ -85,12 +85,3 @@ export default function Login() {
     </div>
   );
 }
-
-export async function getServerSideProps(context) {
-  const providers = await getProviders();
-  return {
-    props: { 
-      providers: JSON.parse(JSON.stringify(providers || {})) 
-    },
-  };
-}

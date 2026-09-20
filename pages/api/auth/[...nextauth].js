@@ -11,11 +11,6 @@ export const authOptions = {
     GitHubProvider({
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
-      authorization: {
-        params: {
-          redirect_uri: `${process.env.NEXTAUTH_URL}/api/auth/callback/github`,
-        },
-      },
     }),
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -38,4 +33,21 @@ export const authOptions = {
   },
 };
 
-export default NextAuth(authOptions);
+// The site is served from several hostnames (custom domain, *.netlify.app and
+// per-deploy preview URLs), so a single hard-coded NEXTAUTH_URL cannot be right
+// for all of them. Derive the origin from the incoming request instead, and only
+// fall back to the configured value for local development.
+function originFromRequest(req) {
+  const host = req.headers['x-forwarded-host'] || req.headers.host;
+  if (!host || host.startsWith('localhost') || host.startsWith('127.0.0.1')) return null;
+  const proto = req.headers['x-forwarded-proto'] || 'https';
+  return `${proto}://${host}`;
+}
+
+export default function auth(req, res) {
+  const origin = originFromRequest(req);
+  if (origin) {
+    process.env.NEXTAUTH_URL = origin;
+  }
+  return NextAuth(req, res, authOptions);
+}
